@@ -173,10 +173,5 @@ class AutoencoderWithDiffusion(nn.Module):
             denoised_latent = self.diffuser.denoise(self.unet, noisy_latent, timesteps)
             reconstructed = self.decoder(denoised_latent)
 
-        
-        # noise_pred = self.unet(noisy_latent, timesteps)
-        # noise_pred = None
-        # denoised_latent = self.diffuser.denoise(self.unet, noisy_latent, timesteps)
-        # reconstructed = self.decoder(denoised_latent)
         return reconstructed, latent, noisy_latent, denoised_latent, noise, noise_pred
 
