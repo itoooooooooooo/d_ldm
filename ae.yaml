@@ -1,7 +1,7 @@
-train_data_path: "/home/a/dcase/tamamori/dev_data/slider/train"
-test_data_path: "/home/a/dcase/tamamori/dev_data/slider/test"
-model_directory: "/home/a/dcase/ito/diffusion/20241002/model"
-result_directory: "/home/a/dcase/ito/diffusion/20241002/result"
+train_data_path: ""
+test_data_path: ""
+model_directory: ""
+result_directory: ""
 batch_size: 128
 epochs: 100
 learning_rate: 0.001
